@@ -12,7 +12,7 @@ app.use(cors()); // ise sabhi ports pe open ho jayega
 app.use(express.json());
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/quotesapp")
+  .connect("mongodb+srv://nauty9625ashish:MugkUoAvc1Y3vcgj@cluster0.pcgcsjc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("DB connected");
   })
