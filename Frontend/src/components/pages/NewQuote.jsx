@@ -13,7 +13,7 @@ function NewQuote() {
     let author = usernameInpRef.current.value;
     let text = quoteInpRef.current.value;
     try {
-      let resp = await axios.post('http://localhost:8080/addQuotes', { author, text });
+      let resp = await axios.post('quotes-app-full-stack.vercel.app/addQuotes', { author, text });
       navigate('/');
     } catch (e) {
       console.log("cannot post at this moment");

@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -29,6 +30,6 @@ app.get("/hello", (req, res) => {
 
 app.use(quotesRoute);
 
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server connected at 8080`);
 });
