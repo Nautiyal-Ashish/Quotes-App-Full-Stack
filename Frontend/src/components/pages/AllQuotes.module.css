@@ -1,0 +1,59 @@
+.AllQuotes {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: #4a90e2;
+  /* Branded color for title */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
+  /* Added letter spacing for better readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for a subtle 3D effect */
+}
+
+.quotesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  /* Consistent gap between quote cards */
+  padding: 2rem;
+  background-color: #f7f7f7;
+  /* Light background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  /* Soft shadow to lift the container slightly */
+}
+
+.quotesList .quoteCard {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  /* Visual indicator with a brand color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quotesList .quoteCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.quotesList .quoteCard .quoteText {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.quotesList .quoteCard .quoteAuthor {
+  font-size: 1rem;
+  color: #666;
+  text-align: right;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
