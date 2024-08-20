@@ -7,7 +7,7 @@ function AllQuotes() {
 
   // api call -> sideeffect
   async function getQuotes() {
-    let resp = await fetch('quotes-app-full-stack.vercel.app/allQuotes');
+    let resp = await fetch('quotes-app-full-stack.vercel.app/ allQuotes');
     let data = await resp.json();
     setQuotes(data);
   }

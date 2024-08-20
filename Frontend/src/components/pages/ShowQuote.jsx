@@ -10,7 +10,7 @@ function ShowQuote() {
   // Fetch quote by ID
   async function fetchQuotes() {
     try {
-      let resp = await axios.get(`quotes-app-full-stack.vercel.app/${params.id}`);
+      let resp = await axios.get(`quotes-app-full-stack.vercel.app/quotes/${params.id}`);
       let { text, author } = resp.data;
       setQuote({ text, author });
     } catch (error) {
